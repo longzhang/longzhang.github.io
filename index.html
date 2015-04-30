@@ -1,1 +1,200 @@
-hello world
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>北京茁悦慧康网络科技有限公司</title>
+
+  	<link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+  	<link rel="stylesheet" href="css/novecentowide_demibold/stylesheet.css" type="text/css" charset="utf-8">
+
+  	<script src='js/jquery-1.6.1.min.js'></script>
+
+  	<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<h1 id="logo-type"><a href="index.html">茁悦慧康</a></h1>
+		<nav class="nav">
+			<ul>
+				<li class="hide"><a href="mailto:contact@7500.com.cn">联系我们</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="intro">
+
+		<h1>
+			茁悦慧康
+		</h1>
+
+		<div class="animation-container">
+			<div id="object" class="animate fadeIn"></div>
+		</div>
+
+		<div id="intro-copy">
+			<img src="./images/arrow.png" alt="Arrow" id="arrow" class="pulse" />
+			<p>往下滑</p>
+		</div>
+	</section>
+
+
+	<section id="example-1">
+
+		<div class="example-container">
+			<img src="./images/phone.png" alt="Image of a phone" id="phone" class="animate" />
+
+			<div class="copy">
+				<h2>APP长高啦</h2>
+				<p>
+					我们一站式的安全服务，帮助您的孩子长得更高更壮。
+				</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="example-2">
+
+		<div class="example-container">
+
+			<div id="map">
+				<img src="./images/pin.png" alt="Pin" id="pin" height="311" width="212" />
+			</div>
+
+			<div class="copy">
+				<h2>覆盖全球的销售网络</h2>
+				<p>
+					覆盖全球的销售网络
+				</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="example-3">
+
+		<div id="pop-up-message" class="example-container">
+			<img src="./images/x.png" alt="x" class="pulse" />
+			<h2>
+				加入我们
+			</h2>
+			<p>
+				加入我们全球化的分销战略，我们与您一起携手走向成功巴拉巴拉，我编不下去了。。。。
+			</p>
+		</div>
+
+
+
+	</section>
+
+	<section id="example-4">
+
+		<div class="example-container">
+
+			<span class="device-diagram">B</span>
+			<img src="./images/arrow-horizontal.png" alt="Arrow" class="device-arrow"/>
+			<span class="device-diagram">C</span>
+
+			<h3>
+				从B端到C端的一站式服务，你懂得。
+			</h3>
+
+		</div>
+
+	</section>
+
+	<section id="example-5">
+
+		<div class="example-container">
+
+			<div class="graph-bar bar-1"></div>
+			<div class="graph-bar bar-2"></div>
+			<div class="graph-bar bar-3"></div>
+			<div class="graph-bar bar-4"></div>
+
+		</div>
+
+		<h3>
+			我们与您一起携手见证奇迹的成长。
+		</h3>
+
+	</section>
+
+	<div>
+		<a href="index.html" class="back">
+			&#8592; 再看一遍
+		</a>
+	</div>
+
+<script>
+
+		$(window).scroll(function() {
+			$('#phone').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+
+			$('#pin').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("hatch");
+				}
+			});
+
+			$('#pop-up-message').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideExpandUp");
+				}
+			});
+
+			$('#example-4').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$('.device-arrow').addClass("stretchRight");
+				}
+			});
+
+			$('#example-5').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$('.graph-bar').addClass("pullUp");
+				}
+			});
+
+
+		});
+
+</script>
+
+
+</body>
+
+</html>
